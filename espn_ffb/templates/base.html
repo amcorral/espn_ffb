@@ -14,14 +14,14 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-static-top">
-      <a class="navbar-brand mr-auto" href="#">League Name&nbsp;</a>
+      <a class="navbar-brand mr-auto" href="#">Art Hung Appreciation League&nbsp;</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTopnav" aria-controls="myTopnav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="myTopnav">
         <ul class="nav navbar-nav nav-pills">
-          {%- if awards_templates_years %}
+          <!-- {%- if awards_templates_years %}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle {% block nav_awards %}{% endblock %}" href="#" id="navbarAwards" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Awards
@@ -32,7 +32,10 @@
                 {%- endfor %}
               </div>
             </li>
-          {%- endif %}
+          {%- endif %} -->
+         <li class="nav-item">
+            <a class="nav-link {% block nav_home %}{% endblock %}" href="{{ url_for('home.show') }}" >Home</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle {% block nav_standings %}{% endblock %}" href="#" id="navbarStandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Standings
@@ -45,9 +48,9 @@
               {%- endfor %}
             </div>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link {% block nav_h2h %}{% endblock %}" href="{{ url_for('h2h_records.show') }}">H2H Records</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link {% block nav_matchups %}{% endblock %}" href="{{ url_for('matchup_history.show') }}" >Matchup History</a>
           </li>

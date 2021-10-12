@@ -1,0 +1,182 @@
+{%- extends "base.html" -%}
+{% block nav_home %}active{% endblock %}
+{%- block content %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bracket.css') }}"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+      <header class="hero">
+      <div class="hero-wrap">
+        <p class="intro" id="intro">Art Hung Appreciation League </p> <br/><br/>
+        <p class="year"><i class="fa fa-star"></i> Player Profiles <i class="fa fa-star"></i></p>
+      </div>
+      </header>
+   	<!-- One table row -->
+     <div style='background-color: #e1e1e1;'>
+    <div style='border-bottom: 4px solid black; border-top: 4px solid black; padding:10px; padding-right: 20%;'>
+   		
+   		<div style='float: left; width: 250px;'> 
+   			<img height=225 src="{{ url_for('static', filename='images/andrew.png') }}"/> 
+   		</div>
+        <div style='margin-left: 250px;'> 
+        <h3>Andrew Corral</h3>
+         <h4> Regular Season : Wins 34 / Losses 40 <br> Playoffs : Wins 2 / Losses 0 <br> Championships 1 / Sackos 1  </h4>
+        If I had put this site together last year and done a player profile for myself, things would have looked awfully different for me. My fantasy football resume was looking pretty Nendick-esque (read: bad) going into this past season, but with a championship under my belt now I don't think the haters can say anything. I am the second most scored against member of our league behind Nendick, but come out with the third most points for all-time. My record may not be astounding, but that comes with the territory of being one of the league's punching bags. This past year I started off the season by playing the highest scorer 2 of the first 4 weeks and was 2nd highest scorer both times, now that's just unlucky. But I'm not hear to complain, the revenge tour is just getting started. 
+        </div>
+   	</div>
+   	<!-- End of example -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/carson.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Carson Hatfield</h3>
+         <h4> Regular Season : Wins 33 / Losses 41 <br> Playoffs : Wins 2 / Losses 0 <br> Championships 1 / Sackos 0  </h4>
+         A look at Carson's all time stats paints a tough picture for the buff baby. A one-season wonder. Tough. I know. But with the lowest points for average out of anyone in the league and just 1 win above the league low in win totals, it's easy to argue that Carson's glory days are behind him. His 2015 season will always be remembered for his #PathToTheChampionship, where he did something with David Johnson and won. To be honest I forget most what happened, but ask him about it and he'll recite to you like it was yesterday. Probably because it was his crowning achievement in our league. I'm hoping for a turn around from the baby. As 1 of 5 former champions, he's in an exclusive club and more is expected of him. 
+        </div>
+      </div>
+      <!-- Second player profile -->
+
+
+      <div style='border-bottom: 4px solid black;  padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Elliot.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Elliot Schad </h3>
+         <h4> Regular Season : Wins 34 / Losses 40 <br> Playoffs : Wins 0 / Losses 1 <br>  Championships 0 / Sackos 1  </h4>
+         It would seem that Elliot is too busy being worth millions to really dedicate to himself to the craft. He's got all the qualities of a top notch fantasy football player with his analytical savvy and cool temperment, but it hasn't really translated into fantasy success. In fact, he seems to be on the lower end of the fantasy spectrum, with a sacko to his name, below average points scored across all seasons, and 1 playoff loss to his name. Maybe this will be his season, or maybe he'll continue to fade into fantasy football anonymity. You know what they say. Sometimes you're the charcuterier and sometimes you're the cheese plate. But more often than not, Elliot looks like the cheese plate. 
+        </div>
+      </div>
+      <!-- Third player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Harrison.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Harrison Jung </h3>
+         <h4> Regular Season : Wins 36 / Losses 38 <br> Playoffs : Wins 2 / Losses 2 <br> Championship 0 / Sackos 2 </h4>
+         HJ's tale of the tape doesn't tell the full story. HJ was a notoriously suspect fantasy football player in the first few editions of the Art Hung Appreciation League, but he slowly came to his own. After recording back to back sackos in 2014 and 2015, Harrison made it his personal mission to be better at fantasy football so he didn't get the 3 peat sacko. We might have had to replace him with Shaq if that had happened because I think there is basically no recovering from that. But I would say he's noticeably better, hawking the waiver wire to pick up rising stars like 2018 Philip Lindsay and 2019 Brashad Perriman. Lets see what the self-proclaimed Waive Wire God can whip up this year with his new found fantasy football guile before delivering too harsh a verdict.
+        </div>
+      </div>
+      <!-- Fourth player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Jacob.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3> Jacob Rudger </h3>
+         <h4> Regular Season : Wins 43 / Losses 31 <br> Playoffs : Wins 2 / Losses 3 <br> Championship 0 / Sackos 0 </h4>
+         Rudge's fantasy football resume stacks up with the best of them when you look at the stats. He's just missing that one sweet sweet title to put the cherry on top of an otherwise very impressive resume. Last season he was on a tear putting everyone and everything on a cheese plate, led by an unreal CMC and Kyler Murray before an unfortunate Championship defeat at the hands of yours truly. With 3 playoff appearances though, Rudge is consistent and you can expect he'll be back. Your neighborhood Rudge can probably be found making some fat beats, surrounded by some serious ploontage, rumbling with the boiz late in the season for a playoff spot that's forsure, but let's see you get that Ship Rudge.
+        </div>
+      </div>
+      <!-- Fifth player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Mark2.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3> Mark Silverman </h3>
+         <h4> Regular Season : Wins 41 / Losses 33 <br> Playoffs : Wins 4 / Losses 1 <br> Championship 2 / Sackos 0 </h4>
+         Marks a 2 time champ so there isn't much slandering to be done here. He's a mercurial talent that Mark. His first 2 seasons his teams were in the bottom of the pack, but he followed that up with 3 great seasons winning in 2016 and 2018, while putting up a good showing in 2017 as well. Now there is something to be said about how Mark comes in at 8th on the all time points leaderboard. His numbers are clearly impacted by his first two seasons, but consistency is important, so we'll see if we get a little more of that out of Mark. But ball don't lie, and Mark's won the whole shebang twice. #RanchItUp
+        </div>
+      </div>
+      <!-- Sixth player profile -->
+
+      <div style='border-bottom: 4px solid black;  padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Delman.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3> Matt Delman </h3>
+         <h4> Regular Season : Wins 40 / Losses 34 <br> Playoffs : Wins 2 / Losses 1 <br> Championship 1* / Sackos 1 </h4>
+         First thing that comes to mind when I think of Delman's fantasy football career is the unfortunate controversy around his championship in 2017. I wish it didn't have to be this way, but it does. Maybe one day if he makes another appearance in the Ship we can clear his name and remove that asterisk and accept him back like Reggie Bush with arms wide open, but today isn't that day damn it. Other than Del's championship season, he's had decent showings in his other seasons, with one sacko to note and a playoff loss to HJ this past year. All eyes are on Delman as he looks to clear his name and prove to the doubters that he doesn't need Shaq whispering salty secrets in his ear to perform. 
+        </div>
+      </div>
+      <!-- Seventh player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/morof2.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3> Nick Morof </h3>
+         <h4> Regular Season : Wins 32 / Losses 30 <br> Playoffs : Wins 3 / Losses 2 <br> Championship 1 / Sackos 0 </h4>
+         It is terribly unfortunate that Morof has had more success in 5 seasons than a lot of the league has had in 6. We were probably all caught a little off guard when Morof came out and won that inaugural season of the league, but that's no excuse. I think we all need to take a good long in the mirror to figure out why this continues to happen. Morof goes prancing around Paris and Detroit, posting IGs of textured salt with French captions, and occasionally stops in to deliver smack downs, all while drafting like 3 QBs a year. None of it makes sense. He has as many wins in 5 seasons as Nendick does in 6, so there's that. I always question Morof's methods and I question the results even more. 
+        </div>
+      </div>
+      <!-- Eighth player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Paul.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Paul Seeley</h3>
+         <h4> Regular Season : Wins 36 / Losses 38 <br> Playoffs : Wins 0 / Losses 2 <br> Championships 0 / Sackos 0  </h4>
+          Paul is really stuck in the middle when it comes to his fantasy football experience in our league. No sackos, no playoff wins, above average points, sub .500 win percentage. Can we get a little excitement Paul?! Would you rather be slightly above average every season with no championships/last places or would you rather be mercurial and have a ship to your name and maybe flame out in a blaze of glory every once in a while? This is the Paul dilemma. Paul seems like he's a sharp football mind, a young Josh McDaniels if you will, but his results aren't stacking up. Paul rarely goes a year without running multiple Pats players on his team, sticking with analytical dumpster fires like Sony Michel through thick and thin, but maybe with TB12 gone that will all change. Maybe, like TB12, this will be the year Paul finally proves the haters wrong by no longer leaning on the Pats. 
+        </div>
+      </div>
+      <!-- Ninth player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Pedraam.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Pedraam Mirzanian</h3>
+         <h4> Regular Season : Wins 43 / Losses 31 <br> Playoffs : Wins 1 / Losses 3 <br> Championships 0 / Sackos 1  </h4>
+         Pedraam will argue that he's been robbed multiple times in the playoffs. The regular-season wonder absolutely shows out most of the year, tied for most wins all-time and the second most points for, but come the playoffs, Ped's ankles start getting a little wobbly. We just need to see more out of Ped in the playoffs before we can start calling him one of the greats in this league is all I'm sayin. Maybe now that he is back on the mainland we'll see another strong season from the Slim Reaper, but he's got to turn it around when it counts. Not even Richard Rodger's hail mary touchdown could help Pedraam beat Baby on this path to the championship in 2015. Sometimes at night, you can still here Pedraam screaming his name. <span style="font-size: 8px"> Richard Rodgeeeeerrrrrsssss </span>
+        </div>
+      </div>
+      <!-- Tenth player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Greos.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Sam Greos</h3>
+         <h4> Regular Season : Wins 33 / Losses 41 <br> Playoffs : Wins 2 / Losses 3 <br> Championships 0 / Sackos 0  </h4>
+         A good look at Greos' fantasy football resume paints a confusing picture of Greos' career in this league. 3 trips to the playoffs with a run to the championship before getting smacked down by the Baby in 2015. But second to last on the all-time points leaderboard for anyone whose played all 6 seasons. I'm leaning with being a little unimpressed here G. Greos frequently comes to the season ready with his personal favorites and a lot of well-research information, the anti-morof if you will, but seems to make that unfortunate mistake that takes him out of the race for the championship. This past year with the number 1 draft pick he took Saquon instead of CMC, and while hindsight is 20/20, these are the kinds of mistakes you can't make if you want to win a championship G.  
+        </div>
+      </div>
+      <!-- Eleventh player profile -->
+
+      <div style='border-bottom: 4px solid black; padding:10px; padding-right: 20%;'>
+         
+         <div style='float: left; width: 250px;'> 
+            <img height=225 src="{{ url_for('static', filename='images/Thomas.png') }}"/> 
+         </div>
+        <div style='margin-left: 250px;'> 
+         <h3>Thomas Nendick</h3>
+         <h4> Regular Season : Wins 32 / Losses 42 <br> Playoffs : Wins 2 / Losses 3 <br> Championships 0 / Sackos 0  </h4>
+          I want to flame Nendick like it's nobodies business. You know I do. But honestly I feel bad for the guy. There is quantifiable proof that he is terribly unlucky as the most scored against member of the league. A little less easily measured is his injury history. But I've done some research and it's bad. In 2015 he drafted Leveon and AJ green in round 1 and 2 who both suffered season ending injuries that year. There was 2016 where he drafted AP and Jamaal Charles in round 1 and 2, and both of them suffered season ending injuries as well. Everything he touches turns to dust. So when he's not getting pounded by his opponents, his guys are out there breakin ankles. That doesn't stop Nendick from competing his darndest though and I've got to appreciate the effort. Better luck next time Nendick.
+        </div>
+      </div>
+      <!-- Twelth player profile -->
+    </div>
+ </body>
+{%- endblock -%}

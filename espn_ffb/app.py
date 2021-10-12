@@ -13,6 +13,7 @@ from espn_ffb.views.h2h_records import h2h_records
 from espn_ffb.views.matchup_history import matchup_history
 from espn_ffb.views.playoffs import playoffs
 from espn_ffb.views.recap import recap
+from espn_ffb.views.home import home
 from espn_ffb.views.standings import standings
 from flask import Flask, redirect
 import glob
@@ -23,6 +24,7 @@ LOG_FORMAT = "%(asctime)s %(levelname)s %(pathname)s %(lineno)d: %(message)s"
 
 app = Flask(__name__)
 app.config.from_object(util.get_config(sys.argv[2]))
+app.register_blueprint(home)
 app.register_blueprint(awards)
 app.register_blueprint(champions)
 app.register_blueprint(h2h_records)
@@ -95,7 +97,7 @@ def setup_logging():
 @app.route('/', methods=['GET'])
 def show_index():
     current_year = query.get_distinct_years()[0]
-    return redirect("/standings/2021", code=302)
+    return redirect("/home", code=302)
 
 
 if __name__ == "__main__":
