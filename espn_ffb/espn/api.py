@@ -98,6 +98,21 @@ def add_matchups(league_setting: LeagueSetting, matchups: List[Matchups], matchu
                                  is_playoffs=matchup_score.is_playoffs,
                                  is_consolation=matchup_score.is_consolation))
 
+# def get_owners(league_settings: Sequence[LeagueSetting]) -> Mapping[str, Owners]:
+#     """
+#     Get owners for the given league settings.
+
+#     :param league_settings: list of league settings
+#     :return: list of owners
+#     """
+#     owners = dict()
+#     for l in league_settings:
+#         for member in l.members:
+#             if member.id not in owners:
+#                 owners[member.id] = Owners(id=member.id,
+#                                                  first_name=member.first_name,
+#                                                  last_name=member.last_name)
+#     return owners
 
 def get_owners(league_settings: Sequence[LeagueSetting]) -> Mapping[str, Owners]:
     """
@@ -115,6 +130,7 @@ def get_owners(league_settings: Sequence[LeagueSetting]) -> Mapping[str, Owners]
                                                  first_name=member.first_name,
                                                  last_name=member.last_name)
     return owners
+
 
 
 def get_team_id_to_owner_id(year: int):
