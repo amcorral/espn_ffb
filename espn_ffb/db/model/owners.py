@@ -5,16 +5,16 @@ class Owners(db.Model):
     PKEY_NAME = "owners_username_pkey"
 
     id = db.Column(db.String, nullable=False)
-    # username = db.Column(db.String, nullable=False)
+    username = db.Column(db.String, nullable=False)
     first_name = db.Column(db.String, nullable=False)
     last_name = db.Column(db.String, nullable=False)
-    db.PrimaryKeyConstraint(id, name=PKEY_NAME)
+    db.PrimaryKeyConstraint(username, name=PKEY_NAME)
     #using id not username as basis for owners
 
     def __key(self):
         return (
             self.id,
-            # self.username,
+            self.username,
             self.first_name,
             self.last_name
         )
@@ -28,7 +28,7 @@ class Owners(db.Model):
     def as_dict(self):
         return {
             'id': self.id,
-            # 'username': self.username,
+            'username': self.username,
             'first_name': self.first_name,
             'last_name': self.last_name
         }
